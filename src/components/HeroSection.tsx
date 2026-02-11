@@ -71,7 +71,7 @@ const HeroSection = () => {
           </div>
           <div className="text-center">
             <div className="text-3xl font-bold bg-gradient-to-r from-aicc-purple to-aicc-orange bg-clip-text text-transparent">
-              250+
+              300+
             </div>
             <div className="text-sm text-gray-600 dark:text-gray-400 mt-1">
               Discord Members
