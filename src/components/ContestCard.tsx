@@ -18,7 +18,7 @@ interface Task {
     author?: string;
     kaggle: string;
     solution: string;
-    blog: string;
+    blog?: string;
     practiceStatus: "easy" | "medium" | "hard" | "legacy";
 }
 
@@ -159,7 +159,9 @@ const ContestCard = ({ month, year, title, winner, tasks }: ContestCardProps) =>
                                         <ExternalLink className="w-3.5 h-3.5" />
                                     </a>
                                     <a
-                                        href={task.blog}
+                                        href={task.blog ?? task.solution}
+                                        target="_blank"
+                                        rel="noreferrer"
                                         className="flex-1 px-4 py-2 rounded-lg text-sm font-medium bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-200 flex items-center justify-center gap-2"
                                     >
                                         Solution

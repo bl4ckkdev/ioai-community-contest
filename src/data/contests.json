@@ -1,6 +1,38 @@
 {
     "contests": [
         {
+            "id": 5,
+            "month": "February",
+            "year": "2026",
+            "title": "Round 4",
+            "tasks": [
+                {
+                    "name": "Sticky Note Blindness",
+                    "type": "CV",
+                    "kaggle": "https://www.kaggle.com/competitions/sticky-note-blindness-aicc-round-4",
+                    "solution": "https://github.com/AI-Community-Contest/solutions/blob/main/round-4/sticky-note-blindness.ipynb",
+                    "author": "Antony Ingorokva",
+                    "practiceStatus": "easy"
+                },
+                {
+                    "name": "Alchemy",
+                    "type": "NLP",
+                    "kaggle": "https://www.kaggle.com/competitions/alchemy-aicc-round-4",
+                    "solution": "https://github.com/AI-Community-Contest/solutions/blob/main/round-4/alchemy.ipynb",
+                    "author": "Antony Ingorokva",
+                    "practiceStatus": "medium"
+                },
+                {
+                    "name": "Extreme Condensation",
+                    "type": "CV",
+                    "kaggle": "https://www.kaggle.com/competitions/extreme-condensation-aicc-round-4",
+                    "solution": "https://github.com/AI-Community-Contest/solutions/blob/main/round-4/extreme-condensation.ipynb",
+                    "author": "Nikoloz Gegenava",
+                    "practiceStatus": "medium"
+                }
+            ]
+        },
+        {
             "id": 4,
             "month": "January",
             "year": "2026",
@@ -12,7 +44,6 @@
                     "kaggle": "https://www.kaggle.com/competitions/drawn-apart-aicc-round-3/overview",
                     "solution": "https://github.com/AI-Community-Contest/solutions/blob/main/round-3/drawn-apart.ipynb",
                     "author": "Walnit",
-                    "blog": "/solutions/round-3/drawn-apart",
                     "practiceStatus": "hard"
                 },
                 {
@@ -20,7 +51,6 @@
                     "type": "Audio",
                     "kaggle": "https://www.kaggle.com/competitions/sound-of-nature-aicc-round-3/overview",
                     "solution": "https://github.com/AI-Community-Contest/solutions/blob/main/round-3/sound-of-nature.ipynb",
-                    "blog": "/solutions/round-3/sound-of-nature",
                     "author": "Asandei Stefan-Alexandru",
                     "practiceStatus": "easy"
                 },
@@ -29,7 +59,6 @@
                     "type": "ML",
                     "kaggle": "https://www.kaggle.com/competitions/mortys-time-paradox-aicc-round-3/overview",
                     "solution": "https://github.com/AI-Community-Contest/solutions/blob/main/round-3/morty-time-paradox.ipynb",
-                    "blog": "/solutions/round-3/morty-time-paradox",
                     "author": "Antony Ingorokva",
                     "practiceStatus": "medium"
                 }
@@ -55,7 +84,6 @@
                     "type": "Audio",
                     "kaggle": "https://www.kaggle.com/competitions/audio-demixing-aicc-round-2",
                     "solution": "https://github.com/AI-Community-Contest/solutions/blob/main/round-2/audio-demixing.ipynb",
-                    "blog": "/solutions/round-2/demixing-audio",
                     "author": "Gior",
                     "practiceStatus": "medium"
                 },
@@ -81,7 +109,6 @@
                     "type": "CV",
                     "kaggle": "https://www.kaggle.com/competitions/the-defected-nuts-aicc-round-1-2",
                     "solution": "https://github.com/AI-Community-Contest/solutions/blob/main/round-1/defected-nuts.ipynb",
-                    "blog": "/solutions/round-1/the-defected-nuts",
                     "author": "Antony Ingorokva",
                     "practiceStatus": "hard"
                 },
@@ -90,7 +117,6 @@
                     "type": "NLP",
                     "kaggle": "https://www.kaggle.com/competitions/autocorrect-aicc-round-1-2",
                     "solution": "https://github.com/AI-Community-Contest/solutions/blob/main/round-1/autocorrect.ipynb",
-                    "blog": "/solutions/round-1/autocorrect",
                     "author": "Walnit",
                     "practiceStatus": "medium"
                 },
@@ -99,7 +125,6 @@
                     "type": "Audio",
                     "kaggle": "https://www.kaggle.com/competitions/is-that-audio-aicc-round-1-2",
                     "solution": "https://github.com/AI-Community-Contest/solutions/blob/main/round-1/is-that-audio.ipynb",
-                    "blog": "/solutions/round-1/is-that-audio",
                     "author": "Gior",
                     "practiceStatus": "legacy"
                 }
@@ -125,7 +150,6 @@
                     "type": "CV",
                     "kaggle": "https://www.kaggle.com/competitions/aicc-round-0-brain-tumor",
                     "solution": "https://github.com/AI-Community-Contest/solutions/blob/main/round-0/brain-tumors.ipynb",
-                    "blog": "/solutions/round-0/find-brain-tumors",
                     "author": "Asandei Stefan-Alexandru",
                     "practiceStatus": "medium"
                 },
