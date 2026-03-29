@@ -80,7 +80,7 @@ const Contests = () => {
 
             {/* Search Bar - with top padding to account for fixed navbar */}
             <div className="sticky top-[72px] z-30 bg-white dark:bg-[#0a0a0f] border-b border-gray-200 dark:border-white/10 shadow-sm pt-0">
-                <div className="max-w-7xl mx-auto px-6 py-4">
+                <div className="max-w-7xl mx-auto px-2 md:px-6 py-4">
                     <div className="relative">
                         <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
                         <input
@@ -103,7 +103,7 @@ const Contests = () => {
             </div>
 
             {/* Results Count */}
-            <div className="max-w-7xl mx-auto px-6 pt-4">
+            <div className="max-w-7xl mx-auto px-2 md:px-6 pt-4">
                 <p className="text-sm text-gray-500 dark:text-gray-400">
                     Showing {filteredContests.length} contest{filteredContests.length !== 1 ? 's' : ''}
                     {searchQuery && ` for "${searchQuery}"`}
@@ -111,7 +111,7 @@ const Contests = () => {
             </div>
 
             {/* Contest Grid - 2 columns on desktop, 1 on mobile */}
-            <div className="max-w-7xl mx-auto px-6 pb-24">
+            <div className="max-w-7xl mx-auto px-2 md:px-6 pb-24">
                 {filteredContests.length > 0 ? (
                     <>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

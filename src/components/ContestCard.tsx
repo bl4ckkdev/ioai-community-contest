@@ -97,7 +97,7 @@ const ContestCard = ({ month, year, title, winner, tasks }: ContestCardProps) =>
                 </div>
             </div>
 
-            <div className="p-6 space-y-3">
+            <div className="p-2 md:p-6 space-y-3">
                 {tasks.map((task, idx) => {
                     const { icon: TaskIcon, gradient } = getTaskConfig(task.type);
                     const statusConfig = PRACTICE_STATUS_CONFIG[task.practiceStatus];
