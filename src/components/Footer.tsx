@@ -69,12 +69,12 @@ const Footer = () => {
   return (
     <footer className="relative bg-gradient-to-b from-white to-gray-50 dark:from-[#0a0a0f] dark:to-[#0f0f15] border-t border-gray-200 dark:border-white/10">
       {/* Top accent */}
-      <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-aicc-purple via-aicc-orange to-aicc-teal" />
+      <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-aicc-purple to-aicc-orange " />
 
       <div className="relative z-10 max-w-6xl mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
-          <div className="lg:col-span-1">
+          <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-4">
               <img src="/assets/AICCCC.png" alt="AICC Logo" className="h-8" />
             </div>

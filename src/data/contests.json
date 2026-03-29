@@ -1,6 +1,38 @@
 {
     "contests": [
         {
+            "id": 6,
+            "month": "March",
+            "year": "2026",
+            "title": "Round 5",
+            "tasks": [
+                {
+                    "name": "Watermark Removal",
+                    "type": "CV",
+                    "kaggle": "https://www.kaggle.com/competitions/watermark-removal-aicc-round-5",
+                    "solution": "todo",
+                    "author": "Asandei Stefan-Alexandru",
+                    "practiceStatus": "easy"
+                },
+                {
+                    "name": "Lost Interpreter",
+                    "type": "NLP",
+                    "kaggle": "https://www.kaggle.com/competitions/lost-interpreter-aicc-round-5/",
+                    "solution": "todo",
+                    "author": "Gior",
+                    "practiceStatus": "easy"
+                },
+                {
+                    "name": "Visual Relations",
+                    "type": "CV",
+                    "kaggle": "https://www.kaggle.com/competitions/visual-relations-aicc-round-5",
+                    "solution": "todo",
+                    "author": "Antony Ingorokva",
+                    "practiceStatus": "medium"
+                }
+            ]
+        },
+        {
             "id": 5,
             "month": "February",
             "year": "2026",
