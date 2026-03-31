@@ -119,10 +119,10 @@ const ContestCard = ({ month, year, title, winner, tasks }: ContestCardProps) =>
                                     <div className="flex-1 min-w-0">
                                         <a
                                             href={task.blog}
-                                            className="group/link inline-flex items-center gap-1.5 font-semibold text-gray-900 dark:text-white hover:text-purple-600 dark:hover:text-purple-400 transition-colors"
+                                            className="group/link inline-flex items-center gap-1.5 font-semibold text-gray-900 dark:text-white"
                                         >
                                             <span className="truncate">{task.name}</span>
-                                            <ExternalLink className="w-3.5 h-3.5 opacity-0 group-hover/link:opacity-100 transition-opacity shrink-0" />
+                                            {/* <ExternalLink className="w-3.5 h-3.5 opacity-0 group-hover/link:opacity-100 transition-opacity shrink-0" /> */}
                                         </a>
 
                                         <div className="flex flex-wrap items-center gap-2 mt-1.5">
