@@ -21,7 +21,7 @@ const Index = () => {
       <Navigation />
       <main>
         <HeroSection />
-        <MissionSection />
+        {/* <MissionSection /> */}
         <RulesSection />
 
         {/* Latest Contest Section */}
