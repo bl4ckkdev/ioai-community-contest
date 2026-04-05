@@ -6,6 +6,8 @@ import mdx from "@mdx-js/rollup";
 import rehypePrism from "rehype-prism-plus";
 import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
+import remarkMath from 'remark-math'
+import rehypeKatex from 'rehype-katex'
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
@@ -18,7 +20,9 @@ export default defineConfig(({ mode }) => ({
       rehypePlugins: [
         rehypeSlug,
         [rehypeAutolinkHeadings, { behavior: 'wrap' }],
-        rehypePrism
+        rehypePrism,
+        remarkMath,
+        rehypeKatex
       ]
     }),
     react(),

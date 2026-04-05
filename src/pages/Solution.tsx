@@ -5,6 +5,7 @@ import { MDXProvider } from '@mdx-js/react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import contestsData from '@/data/contests.json';
+import 'katex/dist/katex.min.css';
 import '@/styles/prism.css';
 
 const Solution = () => {
