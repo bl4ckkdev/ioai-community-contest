@@ -85,10 +85,10 @@ const Solution = () => {
         <div className="min-h-screen bg-gray-50 dark:bg-[#0a0a0f]">
             <Navigation />
 
-            <div className="bg-white dark:bg-[#0a0a0f] border-b border-gray-200 dark:border-white/10 pt-[140px]">
+            <div className="bg-white dark:bg-[#0a0a0f] border-b border-gray-200 dark:border-white/10 pt-20">
                 <div className="max-w-6xl mx-auto px-6 pt-8 pb-6">
                     <div className="flex items-start justify-between gap-6 mb-4">
-                        <h1 className="text-4xl font-bold text-gray-900 dark:text-white flex-1">
+                        <h1 className="text-4xl font-bold text-gray-900 z-50 dark:text-white flex-1">
                             {task.name}
                         </h1>
                         <div className="flex flex-wrap gap-3">
@@ -142,7 +142,7 @@ const Solution = () => {
 
             <div className="max-w-6xl mx-auto px-6 mt-4 pb-8">
                 {MDXContent ? (
-                    <article className="prose text-justify prose-lg dark:prose-invert max-w-none prose-headings:font-bold prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-a:text-purple-600 dark:prose-a:text-purple-400 prose-a:no-underline hover:prose-a:underline">
+                    <article className="prose text-justify prose-lg dark:prose-invert max-w-none prose-headings:font-bold prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-a:font-semibold dark:prose-a:text-purple-400 prose-a:no-underline hover:prose-a:underline">
                         <div className="syntax-highlighter-wrapper">
                             <MDXProvider>
                                 <MDXContent />

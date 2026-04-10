@@ -65,12 +65,16 @@ const Navigation = () => {
     //{ label: 'Community', path: '/community' },
   ];
 
+  const isLandingPage = location.pathname === '/';
+
   return (
     <>
       <div className="fixed top-0 left-0 right-0 z-50">
-        <div className={`absolute inset-x-0 top-0 h-20 transition-opacity duration-300 ${!isScrolled ? 'opacity-100' : 'opacity-0'}`}>
-          <div className="absolute left-1/2 -translate-x-1/2 bottom-0 w-[150%] h-20 bg-gradient-to-r from-aicc-purple/100 via-aicc-orange/100 blur-3xl" />
-        </div> 
+        {isLandingPage && (
+          <div className={`absolute inset-x-0 top-0 h-20 transition-opacity duration-300 ${!isScrolled ? 'opacity-100' : 'opacity-0'}`}>
+            <div className="absolute left-1/2 -translate-x-1/2 bottom-0 w-[150%] h-20 bg-gradient-to-r from-aicc-purple/100 via-aicc-orange/100 blur-3xl"></div>
+          </div>
+        )}
 
         <div className={`absolute inset-x-0 top-5 transition-opacity shadow-sm duration-300 ${isScrolled ? 'opacity-100' : 'opacity-0'}`}/>
 
