@@ -86,7 +86,7 @@ const Solution = () => {
             <Navigation />
 
             <div className="bg-white dark:bg-[#0a0a0f] border-b border-gray-200 dark:border-white/10 pt-[140px]">
-                <div className="max-w-6xl mx-auto px-6 pt-8 pb-6">
+                <div className="max-w-6xl mx-auto px-6 pt-0 pb-6">
                     <div className="flex items-start justify-between gap-6 mb-4">
                         <h1 className="text-4xl font-bold text-gray-900 dark:text-white flex-1">
                             {task.name}

@@ -62,7 +62,7 @@ const Contests = () => {
     }, [filteredContests]);
 
     return (
-        <div className="min-h-screen py-16 bg-gray-50 dark:bg-[#0a0a0f]">
+        <div className="min-h-screen py-[20px] bg-gray-50 dark:bg-[#0a0a0f]">
             <Navigation />
 
             <div className="bg-white dark:bg-[#0a0a0f] border-b border-gray-200 dark:border-white/10 pt-[72px]">
@@ -100,7 +100,6 @@ const Contests = () => {
                 </div>
             </div>
 
-            {/* Results Count */}
             <div className="max-w-7xl mx-auto px-2 md:px-6 pt-4">
                 <p className="text-sm text-gray-500 dark:text-gray-400">
                     Showing {filteredContests.length} contest{filteredContests.length !== 1 ? 's' : ''}
@@ -108,7 +107,6 @@ const Contests = () => {
                 </p>
             </div>
 
-            {/* Contest Grid - 2 columns on desktop, 1 on mobile */}
             <div className="max-w-7xl mx-auto px-2 md:px-6 pb-24">
                 {filteredContests.length > 0 ? (
                     <>
