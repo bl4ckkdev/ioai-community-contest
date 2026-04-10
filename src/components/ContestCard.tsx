@@ -164,14 +164,27 @@ const ContestCard = ({ month, year, title, winner, tasks, roundId }: ContestCard
                                         View on Kaggle
                                         <ExternalLink className="w-3.5 h-3.5" />
                                     </a>
-                                    <a
-                                        href={`/solutions/round-${roundId - 1}/${getTaskSlug(task.name)}`}
-                                        target="_blank"
-                                        rel="noreferrer"
-                                        className="flex-1 px-4 py-2 rounded-lg text-sm font-medium bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-200 flex items-center justify-center gap-2"
-                                    >
-                                        Solution
-                                    </a>
+                                    {task.blog ? (
+                                        <a
+                                            href={`/solutions/round-${roundId - 1}/${getTaskSlug(task.name)}`}
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            className="flex-1 px-4 py-2 rounded-lg text-sm font-medium bg-indigo-50 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-400 border border-indigo-200 dark:border-indigo-800 hover:bg-indigo-100 dark:hover:bg-indigo-900/50 transition-all duration-200 flex items-center justify-center gap-2 shadow-sm"
+                                        >
+                                            <BookOpen className="w-4 h-4" />
+                                            View Editorial
+                                        </a>
+                                    ) : (
+                                        <a
+                                            href={task.solution}
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            className="flex-1 px-4 py-2 rounded-lg text-sm font-medium bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-200 flex items-center justify-center gap-2"
+                                        >
+                                            <Github className="w-4 h-4" />
+                                            Solution <span className="hidden md:inline">Notebook</span>
+                                        </a>
+                                    )}
                                 </div>
                             </div>
                         </div>

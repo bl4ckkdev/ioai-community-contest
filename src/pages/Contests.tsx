@@ -65,9 +65,9 @@ const Contests = () => {
         <div className="min-h-screen py-[20px] bg-gray-50 dark:bg-[#0a0a0f]">
             <Navigation />
 
-            <div className="bg-white dark:bg-[#0a0a0f] border-b border-gray-200 dark:border-white/10 pt-[72px]">
+            <div className="bg-white dark:bg-[#0a0a0f] border-b border-gray-200 dark:border-white/10 pt-4">
                 <div className="max-w-7xl mx-auto px-4 pt-10 pb-6">
-                    <h1 className="text-4xl md:text-5xl font-bold mb-4">
+                    <h1 className="text-4xl md:text-5xl font-extrabold mb-4">
                         <span className="text-gray-900 dark:text-white">Past Contest</span>{' '}
                         <span className="text-gradient">Editions</span>
                     </h1>
