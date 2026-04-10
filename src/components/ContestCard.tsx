@@ -10,6 +10,8 @@ import {
     XCircle,
     AlertTriangle,
     Flame,
+    BookOpen,
+    Github,
 } from "lucide-react";
 
 interface Task {
@@ -28,6 +30,7 @@ interface ContestCardProps {
     title: string;
     winner?: string;
     tasks: Task[];
+    roundId: number;
 }
 
 const TASK_CONFIG = {
@@ -69,10 +72,15 @@ const getTaskConfig = (type: string) =>
     TASK_CONFIG[type.toUpperCase() as keyof typeof TASK_CONFIG] ??
     TASK_CONFIG.DEFAULT;
 
-const ContestCard = ({ month, year, title, winner, tasks }: ContestCardProps) => {
+
+
+const getTaskSlug = (name: string) =>
+    name.toLowerCase().replace(/[^\w\s-]/g, '').replace(/\s+/g, '-').trim();
+
+const ContestCard = ({ month, year, title, winner, tasks, roundId }: ContestCardProps) => {
     return (
         <div className="group relative overflow-hidden rounded-2xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 shadow-sm hover:shadow-xl transition-all duration-300">
-            <div className="p-6 pb-2 border-b border-gray-100 dark:border-gray-800">
+            <div className="p-6 pb-0 border-b border-gray-100 dark:border-gray-800">
                 <div className="flex items-start justify-between gap-4">
                     <div className="flex-1">
                         <div className="flex items-baseline gap-2 mb-1">
@@ -159,7 +167,7 @@ const ContestCard = ({ month, year, title, winner, tasks }: ContestCardProps) =>
                                         <ExternalLink className="w-3.5 h-3.5" />
                                     </a>
                                     <a
-                                        href={task.blog ?? task.solution}
+                                        href={`/solutions/round-${roundId - 1}/${getTaskSlug(task.name)}`}
                                         target="_blank"
                                         rel="noreferrer"
                                         className="flex-1 px-4 py-2 rounded-lg text-sm font-medium bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-200 flex items-center justify-center gap-2"

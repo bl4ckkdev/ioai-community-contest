@@ -62,10 +62,9 @@ const Contests = () => {
     }, [filteredContests]);
 
     return (
-        <div className="min-h-screen bg-gray-50 dark:bg-[#0a0a0f]">
+        <div className="min-h-screen py-16 bg-gray-50 dark:bg-[#0a0a0f]">
             <Navigation />
 
-            {/* Header - with top padding to account for fixed navbar */}
             <div className="bg-white dark:bg-[#0a0a0f] border-b border-gray-200 dark:border-white/10 pt-[72px]">
                 <div className="max-w-7xl mx-auto px-4 pt-10 pb-6">
                     <h1 className="text-4xl md:text-5xl font-bold mb-4">
@@ -78,7 +77,6 @@ const Contests = () => {
                 </div>
             </div>
 
-            {/* Search Bar - with top padding to account for fixed navbar */}
             <div className="sticky top-[72px] z-30 bg-white dark:bg-[#0a0a0f] border-b border-gray-200 dark:border-white/10 shadow-sm pt-0">
                 <div className="max-w-7xl mx-auto px-2 md:px-6 py-4">
                     <div className="relative">
@@ -88,7 +86,7 @@ const Contests = () => {
                             placeholder="Search by contest name, month, or task name."
                             value={searchQuery}
                             onChange={(e) => setSearchQuery(e.target.value)}
-                            className="w-full pl-12 pr-4 py-3 rounded-xl bg-gray-100 dark:bg-white/5 border border-gray-200 dark:border-white/10 text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-aicc-purple/50 focus:border-aicc-purple/50 transition-all"
+                            className="w-full pl-12 pr-4 py-3 bg-gray-100 dark:bg-white/5 border border-gray-200 dark:border-white/10 text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-aicc-purple/50 focus:border-aicc-purple/50 transition-all"
                         />
                         {searchQuery && (
                             <button
@@ -123,6 +121,7 @@ const Contests = () => {
                                     title={contest.title}
                                     winner={contest.winner}
                                     tasks={contest.tasks as Task[]}
+                                    roundId{contest.id}
                                 />
                             ))}
                         </div>

@@ -51,34 +51,31 @@ const RulesSection = () => {
       </div>
 
       <div className="relative z-10 max-w-6xl mx-auto px-6">
-        {/* Header */}
         <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-aicc-orange/10 border border-aicc-orange/20 mb-6">
+          {/*<div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-aicc-orange/10 border border-aicc-orange/20 mb-6">
             <AlertCircle className="w-4 h-4 text-aicc-orange" />
             <span className="text-sm font-medium text-aicc-orange">Important Guidelines</span>
-          </div>
+          </div>*/}
 
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            <span className="text-gray-900 dark:text-white">Contest</span>{' '}
-            <span className="text-gradient">Rules</span>
+            <span className="text-gray-900 dark:text-white">Contest Rules</span>
           </h2>
 
-          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto font-light">
+          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto font-light">
             Simple, fair guidelines to ensure everyone has the best experience possible.
             Following these rules helps create a fair competition that accurately simulates the IOAI.
           </p>
         </div>
 
-        {/* Cards - all open by default, no dropdowns */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {ruleCategories.map((category) => (
             <div
               key={category.id}
-              className="rounded-2xl bg-white dark:bg-white/5 border border-gray-200 dark:border-white/10 overflow-hidden"
+              className="bg-white dark:bg-white/5 border border-gray-200 dark:border-white/10 overflow-hidden"
             >
-              <div className="px-6 py-5">
-                <div className="flex items-center gap-4 mb-4">
-                  <div className={`flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-br ${category.color}`}>
+              <div className="px-6 py-6">
+                <div className="flex items-center gap-4 mb-5">
+                  <div className={`flex items-center justify-center w-10 h-10 rounded-lg bg-gradient-to-br ${category.color}`}>
                     <category.icon className="w-5 h-5 text-white" />
                   </div>
                   <h3 className="text-lg font-semibold text-gray-900 dark:text-white">{category.title}</h3>
@@ -87,7 +84,7 @@ const RulesSection = () => {
                 <div className="space-y-3">
                   {category.items.map((item, index) => (
                     <div key={index} className="flex items-start gap-3 text-gray-600 dark:text-gray-300">
-                      <div className="w-1.5 h-1.5 rounded-full bg-aicc-purple mt-2 flex-shrink-0" />
+                      <div className="w-1.5 h-1.5 rounded-full bg-aicc-dark mt-2 flex-shrink-0" />
                       <span className="font-light text-sm">{item}</span>
                     </div>
                   ))}
@@ -97,9 +94,8 @@ const RulesSection = () => {
           ))}
         </div>
 
-        {/* Note */}
-        <div className="mt-8 p-6 rounded-2xl bg-gradient-to-br from-amber-50 to-orange-50 dark:from-amber-900/20 dark:to-orange-900/20 border border-amber-200 dark:border-amber-800/30">
-          <div className="flex items-start gap-4">
+        <div className="mt-8 p-4 round-lg bg-gradient-to-br from-amber-50 to-orange-50 dark:from-amber-900/20 dark:to-orange-900/20 border border-amber-200 dark:border-amber-800/30">
+          <div className="flex items-start gap-4 -mb-3">
             <div className="p-2 rounded-lg bg-amber-100 dark:bg-amber-900/30">
               <AlertCircle className="w-5 h-5 text-amber-600 dark:text-amber-400" />
             </div>
