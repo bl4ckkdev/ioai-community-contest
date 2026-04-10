@@ -10,7 +10,7 @@
                     "name": "Watermark Removal",
                     "type": "CV",
                     "kaggle": "https://www.kaggle.com/competitions/watermark-removal-aicc-round-5",
-                    "solution": "todo",
+                    "solution": "https://github.com/AI-Community-Contest/solutions/blob/main/round-5/watermark-removal.ipynb",
                     "author": "Asandei Stefan-Alexandru",
                     "practiceStatus": "easy"
                 },
@@ -18,7 +18,7 @@
                     "name": "Lost Interpreter",
                     "type": "NLP",
                     "kaggle": "https://www.kaggle.com/competitions/lost-interpreter-aicc-round-5/",
-                    "solution": "todo",
+                    "solution": "https://github.com/AI-Community-Contest/solutions/blob/main/round-5/lost-interpreter.ipynb",
                     "author": "Gior",
                     "practiceStatus": "easy"
                 },
@@ -26,7 +26,7 @@
                     "name": "Visual Relations",
                     "type": "CV",
                     "kaggle": "https://www.kaggle.com/competitions/visual-relations-aicc-round-5",
-                    "solution": "todo",
+                    "solution": "https://github.com/AI-Community-Contest/solutions/blob/main/round-5/visual-relations.ipynb",
                     "author": "Antony Ingorokva",
                     "practiceStatus": "medium"
                 }
@@ -59,6 +59,7 @@
                     "type": "CV",
                     "kaggle": "https://www.kaggle.com/competitions/extreme-condensation-aicc-round-4",
                     "solution": "https://github.com/AI-Community-Contest/solutions/blob/main/round-4/extreme-condensation.ipynb",
+                    "blog": "/solutions/round-4/extreme-condensation",
                     "author": "Nikoloz Gegenava",
                     "practiceStatus": "hard"
                 }
@@ -181,7 +182,8 @@
                     "name": "Find Brain Tumors",
                     "type": "CV",
                     "kaggle": "https://www.kaggle.com/competitions/aicc-round-0-brain-tumor",
-                    "solution": "https://github.com/AI-Community-Contest/solutions/blob/main/round-0/brain-tumors.ipynb",
+                    "solution": "https://github.com/AI-Community-Contest/solutions/blob/main/round-0/find-brain-tumors.ipynb",
+                    "blog": "/solutions/round-0/find-brain-tumors",
                     "author": "Asandei Stefan-Alexandru",
                     "practiceStatus": "medium"
                 },

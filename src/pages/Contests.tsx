@@ -121,7 +121,7 @@ const Contests = () => {
                                     title={contest.title}
                                     winner={contest.winner}
                                     tasks={contest.tasks as Task[]}
-                                    roundId{contest.id}
+                                    roundId={contest.id}
                                 />
                             ))}
                         </div>
