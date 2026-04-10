@@ -10,6 +10,8 @@ import {
     XCircle,
     AlertTriangle,
     Flame,
+    BookOpen,
+    Github,
 } from "lucide-react";
 
 interface Task {
