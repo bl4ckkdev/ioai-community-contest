@@ -85,4 +85,4 @@ TL;DR of code:
 
 ### Evaluation makes task harder
 
-For the evaluation of solutions, the model is retrained using **AdamW** for exactly 50 steps, which makes the task harder compared to simple SGD. Each AdamW step depends on previous steps momentum and adaptive learning rates, so the effect of a single synthetic example accumulates in a complex way.
+For the evaluation of solutions, the model is retrained using **AdamW** for exactly 50 steps, which makes the task harder compared to simple one step SGD. Each AdamW step depends on previous steps momentum and adaptive learning rates, so the effect of a single synthetic example accumulates in a complex way.
