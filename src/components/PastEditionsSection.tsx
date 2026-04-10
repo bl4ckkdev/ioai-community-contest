@@ -215,7 +215,6 @@ const PastEditionsSection = () => {
           ))}
         </div>
 
-        {/* More coming soon */}
         <div className={`mt-12 text-center p-8 rounded-2xl bg-gradient-to-r from-aicc-purple/5 to-aicc-orange/5 border border-aicc-purple/10 dark:border-aicc-purple/10 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">More Contests Coming Soon!</h3>
           <p className="text-gray-600 dark:text-gray-300 font-light">

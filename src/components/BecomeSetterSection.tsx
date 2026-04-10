@@ -76,11 +76,11 @@ const BecomeSetterSection = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         {/* Header */}
-        <div className={`text-center mb-12 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+        <div className={`text-center mb-12 transition-all duration-700 opacity-100 translate-y-0`}>
 
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            <span className="text-gray-900 dark:text-white">Submit a Task to the</span>{' '}
-            <span className="text-gradient">AI Community Contest</span>
+            <span className="text-gray-900 dark:text-white">Submit a Task to </span>
+            <span className="text-gradient">AICC</span>
           </h2>
 
           <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto font-light leading-relaxed">
@@ -93,10 +93,10 @@ const BecomeSetterSection = () => {
           <div className="lg:col-span-8">
             <Accordion type="single" collapsible defaultValue="guidelines" className="space-y-4">
               {/* Guidelines Section */}
-              <AccordionItem value="guidelines" className="rounded-2xl bg-white dark:bg-white/5 border border-gray-200 dark:border-white/10 px-6">
+              <AccordionItem value="guidelines" className="rounded-lg bg-white dark:bg-white/5 border border-gray-200 dark:border-white/10 px-5">
                 <AccordionTrigger className="hover:no-underline py-5">
                   <div className="flex items-center gap-4">
-                    <div className="flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-br from-purple-500 to-violet-500 text-white font-semibold text-sm">
+                    <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-gradient-to-br from-purple-500 to-violet-500 text-white font-semibold text-sm">
                       1
                     </div>
                     <span className="text-lg font-semibold text-gray-900 dark:text-white">Task Submission Guidelines</span>
@@ -117,10 +117,10 @@ const BecomeSetterSection = () => {
               </AccordionItem>
 
               {/* Submission Materials */}
-              <AccordionItem value="materials" className="rounded-2xl bg-white dark:bg-white/5 border border-gray-200 dark:border-white/10 px-6">
+              <AccordionItem value="materials" className="rounded-lg bg-white dark:bg-white/5 border border-gray-200 dark:border-white/10 px-5">
                 <AccordionTrigger className="hover:no-underline py-5">
                   <div className="flex items-center gap-4">
-                    <div className="flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-br from-orange-500 to-amber-500 text-white font-semibold text-sm">
+                    <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-gradient-to-br from-orange-500 to-amber-500 text-white font-semibold text-sm">
                       2
                     </div>
                     <span className="text-lg font-semibold text-gray-900 dark:text-white">Required Submission Materials</span>
@@ -162,10 +162,10 @@ const BecomeSetterSection = () => {
               </AccordionItem>
 
               {/* Selection Criteria */}
-              <AccordionItem value="criteria" className="rounded-2xl bg-white dark:bg-white/5 border border-gray-200 dark:border-white/10 px-6">
+              <AccordionItem value="criteria" className="rounded-lg bg-white dark:bg-white/5 border border-gray-200 dark:border-white/10 px-5">
                 <AccordionTrigger className="hover:no-underline py-5">
                   <div className="flex items-center gap-4">
-                    <div className="flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-br from-teal-500 to-cyan-500 text-white font-semibold text-sm">
+                    <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-gradient-to-br from-teal-500 to-cyan-500 text-white font-semibold text-sm">
                       3
                     </div>
                     <span className="text-lg font-semibold text-gray-900 dark:text-white">Task Selection Criteria</span>
@@ -188,10 +188,10 @@ const BecomeSetterSection = () => {
               </AccordionItem>
 
               {/* Review Process */}
-              <AccordionItem value="process" className="rounded-2xl bg-white dark:bg-white/5 border border-gray-200 dark:border-white/10 px-6">
+              <AccordionItem value="process" className="rounded-lg bg-white dark:bg-white/5 border border-gray-200 dark:border-white/10 px-5">
                 <AccordionTrigger className="hover:no-underline py-5">
                   <div className="flex items-center gap-4">
-                    <div className="flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-br from-pink-500 to-rose-500 text-white font-semibold text-sm">
+                    <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-gradient-to-br from-pink-500 to-rose-500 text-white font-semibold text-sm">
                       4
                     </div>
                     <span className="text-lg font-semibold text-gray-900 dark:text-white">Review Process</span>
@@ -215,12 +215,12 @@ const BecomeSetterSection = () => {
           <div className="lg:col-span-4">
             <div className="sticky top-8">
               {/* CTA Card */}
-              <div className="rounded-2xl bg-gradient-to-br from-aicc-purple/10 to-aicc-orange/10 border border-aicc-purple/20 p-6 h-full flex flex-col">
+              <div className="rounded-lg border border-aicc-violet/20 shadow-sm p-6 h-full flex flex-col">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-br from-aicc-purple to-aicc-orange">
+                  <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-gradient-to-br from-aicc-purple to-aicc-orange">
                     <MessageCircle className="w-5 h-5 text-white" />
                   </div>
-                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Ready to Submit?</h3>
+                  <h3 className="text-lg px-1 font-semibold text-gray-900 dark:text-white">Ready to Submit?</h3>
                 </div>
 
                 <p className="text-sm text-gray-600 dark:text-gray-400 mb-4 font-light">
@@ -231,7 +231,7 @@ const BecomeSetterSection = () => {
                   href="https://discord.gg/7GfxrqRreY"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn-gradient w-full inline-flex items-center justify-center gap-2 px-6 py-3 font-medium rounded-lg mb-4"
+                  className="btn-gradient w-full inline-flex items-center justify-center gap-2 px-5 py-3 font-medium rounded-lg mb-4"
                 >
                   <MessageCircle className="w-5 h-5" />
                   Join Discord

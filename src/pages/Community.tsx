@@ -18,7 +18,7 @@ const Community = () => {
   return (
     <div className="min-h-screen">
       <Navigation />
-      <main className="pt-0">
+      <main className="pt-8">
         <div className="section-padding">
           <div className="max-w-7xl mx-auto px-6">
             <div className="text-center mb-16">

@@ -23,11 +23,13 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/become-setter" element={<BecomeSetter />} />
           <Route path="/rules" element={<Rules />} />
-          <Route path="/community" element={<Community />} />
           <Route path="/contests" element={<Contests />} />
           <Route path="/solutions/:round/:taskSlug" element={<Solution />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
+
+
+          {/*<Route path="/community" element={<Community />} />*/}
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
