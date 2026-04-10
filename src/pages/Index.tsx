@@ -55,6 +55,7 @@ const Index = () => {
               title={latestContest.title}
               winner={latestContest.winner}
               tasks={latestContest.tasks}
+              roundId={latestContest.id}
             />
 
             {/* See All Link */}
